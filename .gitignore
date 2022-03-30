@@ -1,0 +1,12 @@
+.DS_Store
+
+# Editor directories and files
+*.code-workspace
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+node_modules

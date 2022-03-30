@@ -1,0 +1,47 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"scopeName": "source.tool",
+	"name": "TOOL",
+	"fileTypes": [
+	  "t",
+	  "v",
+	  "samm"
+	],
+	"firstLineMatch": "",
+	"foldingStartMarker": "",
+	"foldingStopMarker": "",
+	"patterns": [
+	  {
+		"match": "![^=].*$",
+		"name": "comment.line"
+	  },
+	  {
+		"match": "\".*?\"",
+		"name": "string.quoted"
+	  },
+	  {
+		"match": "\\$[a-z,A-Z,0-9]+",
+		"name": "variable.language"
+	  },
+	  {
+		"match": "\\b(if|else|endif|while|endwhile|for|endfor|break|from|upto|downto|by|keep|buildstring)\\b",
+		"name": "keyword.control"
+	  },
+	  {
+		"match": "\\b(AND|OR)\\b",
+		"name": "keyword.operator"
+	  },
+	  {
+		"match": "\\b(listen|say|menu|mumble)\\b",
+		"name": "support.function"
+	  },
+	  {
+		"match": "\\b(abs|add|agetime|allocvin|animalstk|arcinfo|assign|avg|binary|biogrow|biostk|biportion|blowup|booleq|boolge|boolgt|boolle|boollt|boolne|canplan1900|changeseq|changeshape|character|classify|cmp|convolution|coordmax|coordmin|copyshape|cplan1900|create|crosstab|cumprod|cumsum|delete|delta|depreciate|diag|dimtran| display|divide|dumpobj|empty|evolvethings|excel|exp|expand|export|extend|extents|extract|famform|fampop|fillbins|findreserve|finplan|fishpop|fishstk|fixat|flip|graph|geomap|getobjinfo|glue|growlivestk|growthrate|hrplan|hypertrig|import|inner|insert|intersect|invtostk|launchwincmd|lifeexp|lifetable|lineardiff|linint|lintrend|loadnetwork|log10|loge|monotonic|macroforest|map|mapcat|mapdims|max|min|mortfromle|movethings|multiply|norm|outer|polynomial|popbirths|populate|power|presentval|rake|random|real|reorder|scurve|seeshape|selfstkflw|shrink|smooth|soiltranloc|solvelinear|sort|sqrt|stack|statechange|subtract|sum|stkactflw|stkflwage|stkflwbirth|stkflwio|stkflwstkshr|stkflwstky|stkflwstock|skipto|table|timeage|trig|union|unwind|usenewstk|useoldstk|windup|satproj|fourier|splineint)\\b",
+		"name": "keyword.other"
+	  },
+	  {
+		"match": "\\b(local|localview|informant|localinformant|boolean|integer|real|string|input|output|creview|view|disview|fbview)\\b",
+		"name": "storage.type"
+	  }
+	]
+  }

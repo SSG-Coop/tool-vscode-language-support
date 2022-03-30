@@ -1,0 +1,64 @@
+{
+  "buildstring": {
+    "prefix": "buildstring",
+    "body": [
+      "buildstring (${1:var}, \"${2:string1}\", \"${3:string2}\"$0)"
+    ],
+    "description": "buildstring TOOL function. Concatenates several strings into 1 string"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for ${1:controlVar} from ${2:start} ${3|upto,downto|} ${4:end} ${5:by ${6:1}}",
+      "    ${0:code}",
+      "endfor"
+    ],
+    "description": "for loop TOOL syntax"
+  },
+  "if": {
+    "prefix": "if",
+    "body": ["if ${1:arithmeticExpression}", "    ${0:code}", "endif"],
+    "description": "if else TOOL syntax"
+  },
+  "listen": {
+    "prefix": "listen",
+    "body": [
+      "listen (\"${1:string}\", ${2:target})$0"
+    ],
+    "description": "listen TOOL function. Used for prompting user for input. User input is saved to target."
+  },
+  "menu": {
+    "prefix": "menu",
+    "body": [
+      "menu (\"${1:prompt}\", ${2:numItems}, ${3:choicesStrings}, ${4:choicesBool}; ${5:defaultChoice=1}, oneChoice=${6|true,false|})$0"
+    ],
+    "description": "menu TOOL function. Used for prompting the user for input in the form of a menu where they can select 1 or more options. User choices are saved to choices boolean array."
+  },
+  "quit": {
+    "prefix": "quit",
+    "body": [
+      "quit (${1|-1,0,1|})$0"
+    ],
+    "description": "quit TOOL function"
+  },
+  "say": {
+    "prefix": "say",
+    "body": [
+      "say (\"${1:string}\")$0"
+    ],
+    "description": "say TOOL function. Outputs text to user."
+  },
+  "skipto": {
+    "prefix": "skipto",
+    "body": [
+      "skipto ${1:label}",
+      "    ${0:skippedCode}", "${1}:"
+    ],
+    "description": "skipto TOOL function. Skips code between skipto command and the specified label."
+  },
+  "while": {
+    "prefix": "while",
+    "body": ["while ${1:arithmeticExpression}", "    ${0:code}", "endwhile"],
+    "description": "while loop TOOL syntax"
+  }
+}

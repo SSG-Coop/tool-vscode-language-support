@@ -1,0 +1,31 @@
+{
+    "name": "tool-language-support",
+    "displayName": "TOOL Language Support",
+    "description": "Language Support for WhatIf? Technologies TOOL Language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "tool",
+            "aliases": ["TOOL", "tool"],
+            "extensions": [".t",".v",".samm"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "tool",
+            "scopeName": "source.tool",
+            "path": "./syntaxes/tool.tmLanguage.json"
+        }],
+        "snippets": [
+            {
+              "language": "tool",
+              "path": "./snippets/snippets.json"
+            }
+          ]
+    }
+}
