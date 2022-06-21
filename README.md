@@ -4,7 +4,7 @@ This package provides TOOL language support for VSCode.
 
 ## To install this extension in vscode:
 ```
-code--install-extension <replace-with-your-local-path-to-this-folder>\tool-language-support-0.0.1.vsix
+code --install-extension <replace-with-your-local-path-to-this-folder>\tool-language-support-0.0.1.vsix
 ```
 
 ## To update the extension
