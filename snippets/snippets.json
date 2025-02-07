@@ -60,5 +60,66 @@
     "prefix": "while",
     "body": ["while ${1:arithmeticExpression}", "    ${0:code}", "endwhile"],
     "description": "while loop TOOL syntax"
+  },
+  "table1": {
+    "prefix": "table1",
+    "body": [
+      "table (${1:var1[]}; ${2:window1=1})"],
+    "description": "table TOOL syntax"
+  },
+  "table2": {
+    "prefix": "table2",
+    "body": [
+      "table (${1:var1[]}, ${2:var2[]}; ${3:window1=1})"],
+    "description": "table TOOL syntax"
+  },
+  "table3": {
+    "prefix": "table3",
+    "body": [
+      "table (${1:var1[]}, ${2:var2[]}, ${3:var3[]}; ${4:window1=1}, ${5:window2=1})"],
+    "description": "table TOOL syntax"
+  },
+  "table4": {
+    "prefix": "table4",
+    "body": [
+      "table (${1:var1[]}, ${2:var2[]}, ${3:var3[]}, ${4:var4[]}; ${5:window1=1}, ${6:window2=1}, ${7:window3=1})"],
+    "description": "table TOOL syntax"
+  },
+  "graph1": {
+    "prefix": "graph1",
+    "body": [
+      "graph (${1:var1[]}; ${2:window1=1})"],
+    "description": "graph TOOL syntax"
+  },
+  "graph2": {
+    "prefix": "graph2",
+    "body": [
+      "graph (${1:var1[]}, ${2:var2[]}; ${3:window1=1})"],
+    "description": "graph TOOL syntax"
+  },
+  "graph3": {
+    "prefix": "graph3",
+    "body": [
+      "graph (${1:var1[]}, ${2:var2[]}, ${3:var3[]}; ${4:window1=1}, ${5:window2=1})"],
+    "description": "graph TOOL syntax"
+  },
+  "graph4": {
+    "prefix": "graph4",
+    "body": [
+      "graph (${1:var1[]}, ${2:var2[]}, ${3:var3[]}, ${4:var4[]}; ${5:window1=1}, ${6:window2=1}, ${7:window3=1})"],
+    "description": "graph TOOL syntax"
+  },
+  "mapping": {
+    "prefix": "mapping",
+    "body": [
+      "local ${1:var[dim2,dim1]} = create(; dim=${2:dim2}, dim=${3:dim1}, format=mapping,"],
+    "description": "informant mapping"
+  },
+  "SEQ": {
+    "prefix": "SEQ",
+    "body": [
+      "SEQ;time:$firstYr:$lastYr:1;year"],
+    "description": "seq dimenision definition"
   }
+  
 }
