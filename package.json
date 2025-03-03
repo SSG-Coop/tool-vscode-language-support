@@ -2,7 +2,7 @@
     "name": "tool-language-support",
     "displayName": "TOOL Language Support",
     "description": "Language Support for WhatIf? Technologies TOOL Language",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.63.0"
     },
