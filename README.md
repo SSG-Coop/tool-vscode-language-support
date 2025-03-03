@@ -4,7 +4,7 @@ This package provides TOOL language support for VSCode.
 
 ## To install this extension in vscode:
 ```
-code --install-extension <replace-with-your-local-path-to-this-folder>\tool-language-support-0.0.1.vsix
+code --install-extension <replace-with-your-local-path-to-this-folder>\tool-language-support-0.0.2.vsix
 ```
 
 ## To improve and update the extension
@@ -19,5 +19,5 @@ At this point you should be set up to work on the extension.
 1. make whatever improvements.  The language formatting is defined in `/syntaxes/tool.tmLanguage.json`. Code snippets for various TOOL language commands are defined in `/snippets/snippet.json`
 2. After making your changes, run the command: `vsce package`  (you can ignore warnings about repository and license)
 3. Commit your changes to this repository
-4. re-run the command `code --install-extension <replace-with-your-local-path-to-this-folder>\tool-language-support-0.0.1.vsix`
+4. re-run the command `code --install-extension <replace-with-your-local-path-to-this-folder>\tool-language-support-0.0.2.vsix`
 5. notify your colleauges that you've made an improvement!
